@@ -32,7 +32,7 @@ const MyScene = ({imageId}) => {
     // Apply texture from URL
     const material = new StandardMaterial("texture", scene);
     material.diffuseTexture = new Texture(
-      `http://localhost:8000/image/${imageId}`
+      `${process.env.REACT_APP_API_BASE}/image/${imageId}`
     );
     box.material = material;
 

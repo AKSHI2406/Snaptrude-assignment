@@ -7,7 +7,7 @@ const MainPage = () => {
   const [location, setLocation] = useState({ lat: 32, lng: 76, zoom: 13 });
   const [imageId, setImageId] = useState(null);
   const callMapApi = async () => {
-    const response = await fetch(`http://localhost:8000/image`, {
+    const response = await fetch(`${process.env.REACT_APP_API_BASE}/image`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
