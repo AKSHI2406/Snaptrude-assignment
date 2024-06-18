@@ -1,3 +1,21 @@
 .mainpage_btn{
-    
+    padding: 12px;
+    border-radius: 12px;
+    margin: 12px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+.mainpage_btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

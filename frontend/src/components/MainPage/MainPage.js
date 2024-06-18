@@ -36,7 +36,7 @@ const MainPage = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       {imageId ? (
         <MyScene imageId={imageId} />
       ) : (
@@ -47,7 +47,7 @@ const MainPage = () => {
             handleCameraChange={handleCameraChange}
           />
           <button className="mainpage_btn" onClick={handleButtonClick}>
-            Click me
+            Capture to texture
           </button>
         </>
       )}
